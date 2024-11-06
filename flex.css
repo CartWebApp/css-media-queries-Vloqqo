@@ -63,13 +63,33 @@
 }
 
 /* Tablet Styles*/
+@media screen and (max-width: 1024px){
+  .third,
+  .quarter {
+    width: calc(97% / 2);
+  }
 
+  [class^="box"]:last-child {
+    /* width: 98%; */
+    flex-grow: 1;
+  }
 
+  .flex-container {
+    height: fit-content;
+  }
 
+}
 
 /* Mobile Styles*/
+@media screen and (max-width: 520px){
+  [class^="box"] {
+    width: 97%;
+  }
+}
 
 
-
-
+/* 
+Try coordinating with partner to use one type of measurement (vw/vh/%/etc.) that's responsive
+Also remember to actually use @mediascreen for responsive design
+Remember to actually use selectors like last-child and not bloat the website w/code */
 
